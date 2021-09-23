@@ -4,6 +4,7 @@ void Game(){
   textAlign(CENTER, CENTER);
   fill(100);
   stroke(0);
+  //indicator
   if(mouseX<=width/2&&mouseX>=0){
    strokeWeight(10);
    stroke(0);
@@ -14,6 +15,7 @@ void Game(){
   text("True", 200, 200);
   fill(200);
   strokeWeight(0);
+  //indicator
   if(mouseX>width/2&&mouseX<=800){
    strokeWeight(5);
    stroke(0);
@@ -23,6 +25,7 @@ void Game(){
   textSize(100);
   text("False", 600, 200);
   
+  //print the color and the name
   fill(selected);
   textSize(size);
   pushMatrix();
@@ -31,7 +34,8 @@ void Game(){
   text(name, 0,0);
   popMatrix();
   
-   fill(255);
+  //time bar
+  fill(255);
   strokeWeight(2);
   stroke(0);
   circle(400,100, 70);
@@ -44,6 +48,8 @@ void Game(){
   stroke(0);
   line(0,0,0,-32);
   popMatrix();
+  
+  // 50/50 maker
   if(clicked){
   if(rnd<=4){
   while(true){
@@ -71,6 +77,7 @@ void Game(){
   angle+=5;
   barAngle+=3;
   
+  // gameover if time is up
   if(barAngle>=360)
   mode=gameover;
 }

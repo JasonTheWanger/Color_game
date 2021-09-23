@@ -2,9 +2,10 @@ void mouseReleased(){
   if(mode==intro)
   mode=game;
   else if(mode==game){
-  //if(mouseX>=0&&mouseX<=800&&mouseY>=0&&mouseY<=600)
+  //determine if user interact with the screen
   clicked=!clicked;
   
+  // detect if the response from the user match 
   if(mouseX>=0&&mouseX<=400&&grt){
    score++; 
    if(score>hScore)

@@ -84,6 +84,7 @@ void setup(){
  grt=true;
  }
  
+ //gif loading
  gif = new PImage[150];
  for(int i=0; i<150; i++){
   gif[i]=loadImage("frame_"+i+"_delay-0.02s.gif");
